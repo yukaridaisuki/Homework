@@ -19,6 +19,7 @@ public class Test01 {
 		//以下自行调用test2,test3...等方法。
 		System.out.println("dd");
 		System.out.println(04);
+
 	}
 	/**
 	 * 以当前方法为例，下面继续编写test2,test3...等方法。

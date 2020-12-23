@@ -12,5 +12,6 @@ public class Test02 {
 		System.out.println(84);
 		System.out.println(44);
 		System.out.println(9);
+
 	}
 }
