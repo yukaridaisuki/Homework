@@ -1,4 +1,7 @@
 package day01;
+
+import java.util.Scanner;
+
 /**
  * 检查一个字符串是否为回文
  * 回文:正着念与反着念一样，例如:上海自来水来自海上
@@ -14,7 +17,21 @@ public class Test03 {
 		 * 若是回文则输出:是回文
 		 * 否则输出:不是回文
 		 */
-
+		Scanner sc = new Scanner(System.in);
+		StringBuilder str = new StringBuilder(sc.nextLine());
+		StringBuilder str2 = new StringBuilder(str.reverse());
+		System.out.println(str2);
+		boolean flag = true;
+		for (int i = 0; i < str.length(); i++) {
+			if(str.charAt(i) != str2.charAt(i)){
+				System.out.println("不是回文");
+				flag = false;
+				break;
+			}
+		}
+		if(flag){
+			System.out.println("是回文");
+		}
 	}
 	/**
 	 * 判读该方法是否是回文
